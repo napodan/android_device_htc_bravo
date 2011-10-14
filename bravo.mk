@@ -25,15 +25,8 @@ PRODUCT_COPY_FILES += \
     device/htc/bravo/init.bravo.rc:root/init.bravo.rc \
     device/htc/bravo/ueventd.bravo.rc:root/ueventd.bravo.rc
 
-ifeq (dehydration_bravo,$(TARGET_PRODUCT))
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=200
-else
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=240
-endif
-
-PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=240 \
     rild.libpath=/system/lib/libhtc_ril.so \
     wifi.interface=eth0 \
     wifi.supplicant_scan_interval=15
@@ -90,15 +83,8 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 # Bravo uses high-density artwork where available
 PRODUCT_LOCALES := hdpi
 
-ifeq (dehydration_bravo,$(TARGET_PRODUCT))
 PRODUCT_COPY_FILES += \
-    device/htc/bravo/bravo-keypad-dehydration.kl:system/usr/keylayout/bravo-keypad.kl
-else 
-PRODUCT_COPY_FILES += \
-    device/htc/bravo/bravo-keypad.kl:system/usr/keylayout/bravo-keypad.kl
-endif
-
-PRODUCT_COPY_FILES += \
+    device/htc/bravo/bravo-keypad.kl:system/usr/keylayout/bravo-keypad.kl \
     device/htc/bravo/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
     device/htc/bravo/synaptics-rmi-touchscreen.idc:system/usr/idc/synaptics-rmi-touchscreen.idc \
     device/htc/bravo/vold.fstab:system/etc/vold.fstab
