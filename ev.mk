@@ -6,6 +6,8 @@ $(call inherit-product, device/htc/bravo/full_bravo.mk)
 # Inherit some common evervolv stuff.
 $(call inherit-product, vendor/ev/config/common_full_phone.mk)
 
+PRODUCT_LOCALES := sw320dp
+
 #
 # Setup device specific product configuration.
 #
