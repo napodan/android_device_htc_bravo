@@ -6,7 +6,15 @@ $(call inherit-product, device/htc/bravo/full_bravo.mk)
 # Inherit some common evervolv stuff.
 $(call inherit-product, vendor/ev/config/common_full_phone.mk)
 
-PRODUCT_LOCALES := sw320dp
+# Bring in prebuilt gapps
+include vendor/napodan/prebuilt/gapps/gapps.mk
+
+# Bring in some prebuilt app
+include vendor/napodan/prebuilt/applications.mk
+
+PRODUCT_PACKAGE_OVERLAYS := vendor/napodan/overlay
+
+PRODUCT_LOCALES := en_US fr_FR en_GB sw320dp
 
 #
 # Setup device specific product configuration.
@@ -21,7 +29,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_bravo BUILD_FINGERPRINT=htc_wwe
 #
 # Set up the product codename, build version & MOTD.
 #
-PRODUCT_CODENAME := Turba
+PRODUCT_CODENAME := Elsa
 PRODUCT_VERSION_DEVICE_SPECIFIC := p12
 
 PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing this rom based on Evervolv for your HTC Desire\nPlease visit evervolv at \#evervolv on irc.freenode.net\n------------------------------------------------\n"
