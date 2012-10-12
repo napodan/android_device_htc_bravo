@@ -1,10 +1,10 @@
 # Call this first so apn list is actually copied
 $(call inherit-product, vendor/ev/config/gsm.mk)
 
-$(call inherit-product, device/htc/bravo/full_bravo.mk)
+$(call inherit-product, device/htc/bravo/small_bravo.mk)
 
 # Inherit some common evervolv stuff.
-$(call inherit-product, vendor/ev/config/common_full_phone.mk)
+$(call inherit-product, vendor/ev/config/common_small_phone.mk)
 
 # Bring in prebuilt gapps
 include vendor/napodan/prebuilt/gapps/gapps.mk
