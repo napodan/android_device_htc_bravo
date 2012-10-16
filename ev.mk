@@ -30,7 +30,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_bravo BUILD_FINGERPRINT=htc_wwe
 # Set up the product codename, build version & MOTD.
 #
 PRODUCT_CODENAME := Elsa
-PRODUCT_VERSION_DEVICE_SPECIFIC := p12
+PRODUCT_VERSION_DEVICE_SPECIFIC := p1
 
 PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing this rom based on Evervolv for your HTC Desire\nPlease visit evervolv at \#evervolv on irc.freenode.net\n------------------------------------------------\n"
 
