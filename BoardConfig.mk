@@ -1,4 +1,4 @@
-# Copyright (C) 2009 The Android Open Source Project
+# Copyright (C) 2011 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,8 +27,6 @@ USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
 -include vendor/htc/bravo/BoardConfigVendor.mk
-# inherit common defines for all qsd8k devices
-include device/htc/qsd8k-common/BoardConfigCommon.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := bravo
 
@@ -36,8 +34,13 @@ BOARD_KERNEL_CMDLINE := no_console_suspend=1 msmsdcc_sdioirq=1 wire.search_count
 BOARD_KERNEL_BASE := 0x20000000
 BOARD_KERNEL_NEW_PPPOX := true
 
+TARGET_ARCH := arm
+
 TARGET_KERNEL_CONFIG    := evervolv_bravo_defconfig
 TARGET_PREBUILT_KERNEL  := device/htc/bravo/prebuilt/kernel
+
+# inherit common defines for all qsd8k devices
+include device/htc/qsd8k-common/BoardConfigCommon.mk
 
 # to enable the GPS HAL
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := bravo

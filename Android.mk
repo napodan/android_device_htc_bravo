@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(my-dir)
+LOCAL_PATH := $(call my-dir)
 subdir_makefiles := \
 	$(LOCAL_PATH)/libsensors/Android.mk \
 	$(LOCAL_PATH)/liblights/Android.mk
 
-include $(subdir_makefiles)
+include $(call all-makefiles-under,$(LOCAL_PATH))
