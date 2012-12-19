@@ -46,7 +46,12 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := bravo
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 3200
 
 # Pull all dictionaries
-TARGET_USE_KEYBOARD := international
+#TARGET_USE_KEYBOARD := international
+
+MINIMAL_FONT := true
+SMALLER_FONT_FOOTPRINT := true
+
+MINIMAL_NEWWAVELABS := true
 
 # Use legacy touchscreen
 BOARD_USE_LEGACY_TOUCHSCREEN := true
