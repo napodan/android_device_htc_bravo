@@ -16,6 +16,9 @@ PRODUCT_PACKAGE_OVERLAYS := vendor/napodan/overlay
 
 PRODUCT_LOCALES := en_US fr_FR en_GB sw320dp
 
+PRODUCT_PACKAGES += \
+				Torch
+
 #
 # Setup device specific product configuration.
 #
