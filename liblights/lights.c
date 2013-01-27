@@ -175,7 +175,7 @@ static void set_speaker_light_locked_dual (struct light_device_t *dev, struct li
 
 	if (bcolor == LED_AMBER) {
 		write_int (GREEN_LED_FILE, 1);
-		write_int (AMBER_BLINK_FILE, 4);
+		write_int (AMBER_BLINK_FILE, 1);
 		write_int (BLUE_LED_FILE, 0);
 	} else if (bcolor == LED_GREEN) {
 		write_int (GREEN_LED_FILE, 1);
