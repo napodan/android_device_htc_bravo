@@ -55,6 +55,7 @@ MINIMAL_NEWWAVELABS := true
 
 # Use legacy touchscreen
 BOARD_USE_LEGACY_TOUCHSCREEN := true
+BOARD_USE_NEW_LIBRIL_HTC := true
 
 # Hacks
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
