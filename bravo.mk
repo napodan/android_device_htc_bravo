@@ -77,6 +77,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     sensors.bravo \
     lights.bravo \
+    gps.bravo \
     gralloc.qsd8k \
     librs_jni \
     com.android.future.usb.accessory
