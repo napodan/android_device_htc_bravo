@@ -111,3 +111,28 @@ $(call inherit-product-if-exists, vendor/htc/bravo/bravo-vendor.mk)
 
 # stuff common to all HTC phones
 $(call inherit-product, device/htc/common/common.mk)
+
+
+PRODUCT_PACKAGES += \
+		bluetoothd \
+		brcm_patchram_plus \
+		hciattach \
+		mkyaffs2image \
+		omx_tests \
+		pand \
+		rild \
+		sdptool \
+		sh \
+		wpa_supplicant \
+		audio \
+		copybit.qsd8k \
+		lights.qsd8k \
+		libstagefrighthw \
+		libttspico \
+		libttssynthproxy \
+		bravo-keypad.kcm \
+		qwerty.kcm \
+		qwerty2.kcm \
+		fw_bcm4329.bin \
+		fw_bcm4329_apsta.bin
+
