@@ -136,3 +136,6 @@ PRODUCT_PACKAGES += \
 		fw_bcm4329.bin \
 		fw_bcm4329_apsta.bin
 
+# Host packages
+PRODUCT_PACKAGES += \
+		fastboot
