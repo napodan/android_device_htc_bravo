@@ -114,6 +114,7 @@ $(call inherit-product, device/htc/common/common.mk)
 
 
 PRODUCT_PACKAGES += \
+    		file_contexts \
 		bluetoothd \
 		brcm_patchram_plus \
 		hciattach \
