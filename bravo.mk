@@ -137,6 +137,10 @@ PRODUCT_PACKAGES += \
 		fw_bcm4329.bin \
 		fw_bcm4329_apsta.bin
 
+# New packages
+PRODUCT_PACKAGES += \
+		apache-xml
+
 # Host packages
 PRODUCT_PACKAGES += \
 		fastboot
