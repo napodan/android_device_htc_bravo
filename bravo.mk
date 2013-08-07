@@ -144,3 +144,23 @@ PRODUCT_PACKAGES += \
 # Host packages
 PRODUCT_PACKAGES += \
 		fastboot
+
+# Missing Libraries (to be removed)
+PRODUCT_PACKAGES += \
+	libaudio \
+	liba2dp \
+	libacc \
+	libaudiopolicy \
+	libbluedroid \
+	libbluetooth \
+	libbluetoothd \
+	libcorkscrew \
+	libdiskconfig \
+	libemoji \
+	libexif \
+	libgccdemangle \
+	librpc \
+	libskiagl \
+	libstagefright_color_conversion \
+
+
