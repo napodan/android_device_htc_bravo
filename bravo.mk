@@ -99,13 +99,8 @@ PRODUCT_COPY_FILES += \
     device/htc/bravo/bcm4329.ko:system/lib/modules/bcm4329.ko
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/htc/bravo/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+TARGET_PREBUILT_KERNEL := device/htc/bravo/kernel
 endif
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
 
 $(call inherit-product-if-exists, vendor/htc/bravo/bravo-vendor.mk)
 
