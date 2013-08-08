@@ -27,7 +27,5 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := bravo-keypad.kcm
 include $(BUILD_KEY_CHAR_MAP)
 
-ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
-
 # include the non-open-source counterpart to this file
 -include vendor/htc/bravo/AndroidBoardVendor.mk

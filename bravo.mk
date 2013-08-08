@@ -145,7 +145,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 		fastboot
 
-# Missing Libraries (to be removed)
+# Missing packages (to be removed)
 PRODUCT_PACKAGES += \
 	libaudio \
 	liba2dp \
@@ -162,5 +162,8 @@ PRODUCT_PACKAGES += \
 	librpc \
 	libskiagl \
 	libstagefright_color_conversion \
+	wpa_supplicant.conf \
+	dhcpcd.conf \
+	
 
 
