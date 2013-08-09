@@ -98,8 +98,9 @@ TARGET_KERNEL_CONFIG    := bravo_defconfig
 BUILD_KEY_CHAR_MAP := vendor/napodan/key_char_map.mk
 
 TARGET_GCC_VERSION_EXP := 4.4.3
-TARGET_TOOLS_PREFIX := \
-	prebuilt/$(HOST_PREBUILT_TAG)/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
+TARGET_GCC_VERSION := $(TARGET_GCC_VERSION_EXP)
+TARGET_TOOLCHAIN_ROOT := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-eabi-$(TARGET_GCC_VERSION)
+TARGET_TOOLS_PREFIX := $(TARGET_TOOLCHAIN_ROOT)/bin/arm-eabi-
 
 DISPLAY_BUILD_NUMBER := true
 
