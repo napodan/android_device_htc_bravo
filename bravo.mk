@@ -159,6 +159,26 @@ PRODUCT_PACKAGES += \
 	libstagefright_color_conversion \
 	wpa_supplicant.conf \
 	dhcpcd.conf \
-	
+	audio.conf \
+	auto_pairing.conf \
+	blacklist.conf \
+	input.conf \
+	main.conf \
+	dbus.conf \
+	cacerts.bks \
+
+PRODUCT_PACKAGES += \
+	Clockopia.ttf \
+	DroidSans-Bold.ttf \
+	DroidSans.ttf \
+	DroidSansArabic.ttf \
+	DroidSansFallback.ttf \
+	DroidSansHebrew.ttf \
+	DroidSansMono.ttf \
+	DroidSansThai.ttf \
+	DroidSerif-Bold.ttf \
+	DroidSerif-BoldItalic.ttf \
+	DroidSerif-Italic.ttf \
+	DroidSerif-Regular.ttf \
 
 
