@@ -91,9 +91,11 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 3200
 BOARD_HAVE_FM_RADIO := true
 BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
 
-TARGET_KERNEL_SOURCE := kernel/napodan/thalamus
-BUILD_KERNEL := true
+# kernel
+TARGET_KERNEL_SOURCE    := kernel/napodan/thalamus
+BUILD_KERNEL            := true
 TARGET_KERNEL_CONFIG    := bravo_defconfig
+KERNEL_TOOLCHAIN_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi-
 
 BUILD_KEY_CHAR_MAP := vendor/napodan/key_char_map.mk
 
@@ -103,5 +105,4 @@ TARGET_TOOLCHAIN_ROOT := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-eabi-$(TARGE
 TARGET_TOOLS_PREFIX := $(TARGET_TOOLCHAIN_ROOT)/bin/arm-eabi-
 
 DISPLAY_BUILD_NUMBER := true
-
-WITH_HOST_DALVIK := false
+DISABLE_DEXPREOPT := true
