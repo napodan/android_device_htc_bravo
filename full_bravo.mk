@@ -28,8 +28,13 @@ WITH_HOST_DALVIK := false
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
 # The rest of the configuration is inherited from a generic config
+# aosp add his PRODUCT_LOCALES here
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+# bravo add his PRODUCT_LOCALES here
 $(call inherit-product, device/htc/bravo/bravo.mk)
+
+# We erase all PRODUCT_LOCALES here
+PRODUCT_LOCALES := en_US en_GB fr_FR hdpi
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_bravo
