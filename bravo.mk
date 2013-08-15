@@ -181,4 +181,8 @@ PRODUCT_PACKAGES += \
 	DroidSerif-Italic.ttf \
 	DroidSerif-Regular.ttf \
 
+# For Debbugging
+PRODUCT_PACKAGES += \
+	gdbserver \
+
 
