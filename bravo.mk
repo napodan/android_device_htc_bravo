@@ -155,6 +155,7 @@ PRODUCT_PACKAGES += \
 	libexif \
 	libgccdemangle \
 	librpc \
+	libjavacore \
 	libskiagl \
 	libstagefright_color_conversion \
 	wpa_supplicant.conf \
@@ -166,6 +167,8 @@ PRODUCT_PACKAGES += \
 	main.conf \
 	dbus.conf \
 	cacerts.bks \
+
+LIBCORE_SKIP_TESTS := true
 
 PRODUCT_PACKAGES += \
 	Clockopia.ttf \
