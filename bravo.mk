@@ -167,6 +167,7 @@ PRODUCT_PACKAGES += \
 	main.conf \
 	dbus.conf \
 	cacerts.bks \
+	libOpenSLES \
 
 LIBCORE_SKIP_TESTS := true
 
