@@ -1,2 +1,5 @@
 mtd@misc 0460 radio diag
+# Napodan : Don't know if bravo need this :
+/dev/ttyHS0               0600   bluetooth  bluetooth
+
 
