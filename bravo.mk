@@ -142,7 +142,6 @@ PRODUCT_PACKAGES += \
 
 # Missing packages (to be removed)
 PRODUCT_PACKAGES += \
-	init.environ.rc \
 	libaudio \
 	liba2dp \
 	libacc \
